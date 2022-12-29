@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="js/블랙핑크.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/Tablet.css">
+    <link rel="stylesheet" href="css/Mobile.css"> -->
+    <title>BLACK PINK   ㅣ   블랙핑크 팬명록</title>
+</head>
+
+<body>
+<div id="layout">
+    <header>
+        <nav>
+            <div>
+                <a href="#" id="logo">
+                    <img src="images/logo.jpg" alt="logo">
+                </a>
+                <div id="menu">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#album">album</a>
+                    <a href="#mv">mv</a>
+                    <a href="#stage">wold tour</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="mytitle">
+        <h1>&lt;BLACK PINK&gt;<br></h1>
+            <p>현재기온: <span id="temp">36</span>도</p>
+            <!-- <p>블랙핑크의 팬명록입니다</p> -->
+            <button type="button" class="btn btn-outline-light" onclick="open_box()">응원하기</button>
+            
+    </section>
+    <section class="post" id="post-box">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">닉네임</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+            <label for="floatingTextarea2">응원댓글</label>
+        </div>
+        <div class="mybtns">
+            <button type="button" class="btn btn-dark">응원 남기기</button>
+            <button onclick="close_box()" type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+        <section id="comment">
+        <div class="card">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>BLACKPINK siempre ofrece talento, voz y baile, estoy orgullosa de estas chicas. (♡‿♡)
+                        <br>Blackpink is the revolution</p>
+                    <footer class="blockquote-footer">Jennierubyjane<cite title="Source Title">_Pick Venom</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Después de una larga espera las reinas están de vuelta!!!<br>BLACKPINK IN YOUR AREA!!!</p>
+                    <footer class="blockquote-footer">R<cite title="Source Title">_Pick Venom</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>BLACKPINK jamás decepciona su música es arte y sus coreografías son las mejores</p>
+                    <footer class="blockquote-footer">Henry Sanuma<cite title="Source Title">_Pick Venom</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    </section>
+    <main>
+        <section class="iamges">
+            <h2>member</h2>
+            <div id="poster">
+                <a href="#" onclick= "window.open('jennie.html', '_blank', 'width=800, top=300, left=700')"><img src="images/poster1.jpg" alt="1"></a>
+                <a href="#" onclick= "window.open('rose.html', '_blank', 'width=800, top=300, left=700')"><img src="images/poster2.jpg" alt="2"></a>
+                <a href="#" onclick= "window.open('jisoo.html', '_blank', 'width=800, top=300, left=700')"><img src="images/poster3.jpg" alt="3"></a>
+                <a href="#" onclick= "window.open('lisa.html', '_blank', 'width=800, top=300, left=700')"><img src="images/poster4.jpg" alt="4"></a>
+            </div>
+        </section>
+        <section id="about">
+            <h2>about</h2>
+            <h3>
+                “BLACKPINK IN YOUR AREA!”<br>
+                “BLACKPINK IS THE REVOLUTION!”<br>
+                <b>Signature Sound / Catchphrase</b>
+            </h3>
+            <div id="aboutTxt">
+                <section>
+                    <h5 class="hidden">멤버소개</h5>
+                    <p>
+                        <b>리드보컬 지수 </b><br>
+                        탄탄한 발성과 안정적인 라이브 소화능력이 강점
+                    </p>
+                    <p>
+                        <b>메인래퍼와 리드보컬 제니</b><br>
+                        노래와 랩, 춤 모든 포지션에서 준수한 실력을 보유<br>
+                        다방면에서 뛰어난 끼를 지니고 있다.
+                    </p>
+                    <p>
+                        <b>메인보컬&리드댄서 로제 </b><br>
+                        탄탄한 발성과 안정적인 라이브 소화능력이 강점
+                    </p>
+                    <p>
+                        <b>메인댄서&리드래퍼를 리사 </b><br>
+                        프로댄서들의 춤을 가장 잘 추는 아이돌로 거론되며 
+                        현역 탑 래퍼들한테 인정받는 여성 아이돌
+                    </p>
+                </section>
+                <p id="aboutImg"><img src="images/about01.jpg" alt="pc버전이미지" ></p>
+            </div>
+            <div id="AdditionalTxt">
+                <h4>01</h4>
+                <p class="box">
+                    BLACKPINK라는 그룹명은 가장 예쁜 색으로 표현되는 "핑크&"블랙"으로 부정하는 의미를 덧붙여 <b>‘예쁘게만 보지 마라’, ‘보이는 게 다가 아니다’</b>라는 반전 의미를 담고 있다고 한다. 발표하는 노래들 역시 팀명의 의미와 부합하는 곡들이 많다. 데뷔하기 전까지의 가칭은 핑크펑크(PINKPUNK)였고, 팬들 사이에서는 팀명이 "TLC-F"라는 소문이 있었다. 당시 팬들이 줄여서 지칭하는 팀명은 텔솊. 또 확정 전에는 '매그넘'이라는 팀명도 후보군에 올랐었다.
+                    <b>YG엔터테인먼트에서 최초이자 유일하게 리더가 없는 그룹이다.</b> 구성원 네 명이 친구처럼 지내기 때문에 리더가 없어도 상관 없겠다고 판단해 리더를 정하지 않았다고 한다
+                </p>
+                <p class="box">
+                    <b>인기와 인지도를 평가할 수 있는 여러 지표▼</b><br>
+                    공식 유튜브 채널 구독자 국내&세계 아티스트 1위 / 스포티파이 팔로워 세계 걸그룹 1위, 국내 여자 가수 1위, 전 세계 여자 아티스트 9위, 국내 가수 남녀 통합 2위 
+                    공식 인스타그램 팔로워 국내 여자 가수 1위, 국내 남녀 가수 통합 2위<br>팔로워 국내 여자 가수 1위, 국내 남녀 가수 통합 2위.
+                    </p>
+            </div>
+        </section>
+        <section id="album">
+            <h2>album</h2>
+            <div>
+                <button type="button">
+                    <img src="images/the album.jpg" alt="THE ALBUM">
+                    THE ALBUM
+                </button>
+                <button type="button">
+                    <img src="images/how you like that.jpg" alt="HOW YOU LIKE THAT">
+                    HOW YOU LIKE THAT
+                </button>
+                <button type="button">
+                    <img src="images/SQUARE UP.jpg" alt="SQUARE UP">
+                    SQUARE UP
+                </button>
+                <button type="button">
+                    <img src="images/Kill this love.jpg" alt="KILL THIS LOVE">
+                    KILL THIS LOVE
+                </button>
+                <button type="button">
+                    <img src="images/pink venom.jpg" alt="BORN VENOM">
+                    BORN PINK
+                </button>
+            </div>
+        </section>
+    </main>
+    <section id="mv">
+        <h2>mv</h2>
+        <div id="mvAbout">
+            <p><img src="images/mv main.png" alt="mvMain"></p>
+            <div>
+                <h4>“블랙핑크는 트렌드를 이끄는 현 시대의 아이콘이자, 그 누구도 부인할 수 없는 세계에서 가장 큰 여성 밴드가 됐다”</h4>
+                <p>
+                    미국 시사주간지 타임지가 뽑은 ‘올해의 엔터테이너’가 되었으며 올 한 해 글로벌 음악 차트에서 가장 큰 활약을 보인 K팝 그룹이 된 것은 물론, 두 번째 정규 앨범을 통해 여러 기록을 갈아치웠다고 선정 이유를 밝혔다.
+                    2016년 데뷔한 블랙핑크는 발표하는 곡마다 히트를 하며 K팝을 대표하는 걸그룹으로 자리잡았다. 유튜브 채널 구독자는 8330만명으로 전 세계 아티스트 중 가장 많다
+                </p>
+                <p>
+                    많은 걸그룹 대란 속에서 블랙핑크가 여전히 강렬한 존재감을 드러내며 그들의 확고한 감각이 더 두드라져보이는 것은 멤버 각자의 개성이 뚜렷하고 패션 아이덴티티가 확고하게 자리 잡혔기 때문입니다.
+                    블랙핑크의 뮤직비디오는 화려한 영상미로 뜨거운 사랑을 받았던 만큼 다채로운 장치를 활용한 제작 과정이 눈길을 끌었으며 감각적인 장면 뒤편에는 멤버들의 아이디어가 녹아 있습니다.
+                    <br>
+                    블랙핑크는 예전부터 한복을 리폼하거나 동양적 요소를 패션에 접목하곤 했습니다. 이번 뮤직비디오에서도 마찬가지. 특히 오프닝에 등장하는 지수는 거문고 사운드와 함께 존재감을 드러냈는데요. 이번엔 좀 더 꾸뛰르 터치를 더한 소희의 화려한 드레스와 까르띠에 주얼리를 현대적으로 착용한 룩이 눈길을 끕니다.
+                </p>
+            </div>
+        </div>
+        <div id="mv_list" >
+        <h4>mv list</h4>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=2S24-y0Ij3Y">
+                <img src="images/Kill this love mv.png" alt="Kill_this_love">
+                <b>Kill this love</b>
+                <span>조회수_17억회 3년 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=dyRsYk0LyA8">
+                <img src="images/lovesick girl.png" alt="lovesick_girl">
+                <b>lovesick girl</b>
+                <span>조회수_6.3억회  2년 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=awkkyBH2zEo">
+                <img src="images/lalisa mv.png" alt="lalisa">
+                <b>lalisa</b>
+                <span>조회수_5.6억회 1개월 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=7WyHtSlvHD4">
+                <img src="images/ready for love mv.png" alt="ready_for_love">
+                <b>ready for love</b>
+                <span>조회수_1.1억회 4개월 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=gQlMMD8auMs">
+                <img src="images/pink venom mv.png" alt="pink venom">
+                <b>pink venom</b>
+                <span>조회수_4.6억회 3개월 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=K9_VFxzCuQ0">
+                <img src="images/gone mv.png" alt="뮤비 이미지">
+                <b>gone</b>
+                <span>조회수_2.2억회 1년 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=b73BI9eUkjM">
+                <img src="images/solo mv.png" alt="solo">
+                <b>solo</b>
+                <span>조회수_8.7억회 4년 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=IHNzOHi8sJs">
+                <img src="images/ddu-du ddu-du mv.png" alt="ddu-du">
+                </span>
+                <b>ddu-du ddu-du</b>
+                <span>조회수_17억회 3년 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=POe9SOEKotk">
+                <img src="images/shut down mv.png" alt="shut down">
+                <b>shut down</b>
+                <span>조회수_2.7억회 2개월 전</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=Amq-qlqbjYA">
+                <img src="images/마지막처럼 mv.png" alt="마지막처럼">
+                <b>마지막처럼</b>
+                <span>조회수_12억회 5년 전</span>
+            </a></li>
+        </ul>
+        </div>
+    </section>
+    <section id="stage">
+        <h2>wold tour</h2>
+        <div id="video_cover">
+            <video class="video" autoplay muted playsinline loop>
+            <source type="video/mp4" src="images/BP_MainLogo_Loop_Web_v08.mp4" >
+            </video>
+        </div>
+    <div class="ticket">
+        <h5 class="schedule--date">2022.12.11 SUN 8PM</h5>
+        <h5 class="schedule--city">PARIS</h5>
+        <h5 class="schedule--location">ACCOR ARENA</h5>
+        <div class="schedule--actions">
+            <a href="#" target="_blank">
+                <button type="button" class="button--grey">SOLDOUT</button>
+            </a>
+        </div>
+    </div>
+    <div class="ticket">
+        <h5 class="schedule--date">2022.12.12 MON 8PM</h5>
+        <h5 class="schedule--city">PARIS</h5>
+        <h5 class="schedule--location">ACCOR ARENA</h5>
+        <div class="schedule--actions">
+            <a href="https://www.aegpresents.co.uk/home/blackpink-world-tour-europe" target="_blank">
+                <button type="button" class="button--ghost">MORE INFO</button>
+            </a>
+            <a href="https://billetterie.aegpresents.fr/fr/liste/idlist/2556/codtypadh/PRM/numadh/01/codeconf/promo01" target="_blank">
+                <button type="button" class="button--pink">TICKET LINK</button>
+            </a>
+        </div>
+    </div>
+    <div class="ticket">
+        <h5 class="schedule--date">2022.12.15 THU 8PM</h5>
+        <h5 class="schedule--city">COPENHAGEN</h5>
+        <h5 class="schedule--location">ROYAL ARENA</h5>
+        <div class="schedule--actions">
+            <a href="https://www.aegpresents.co.uk/home/blackpink-world-tour-europe" target="_blank">
+                <button type="button" class="button--ghost">MORE INFO</button>
+            </a>
+            <a href="https://www.ticketmaster.dk/event/blackpink-blackpink-world-tour-born-pink-copenhagen-billetter/521481?language=da-dk" target="_blank">
+                <button type="button" class="button--pink">TICKET LINK</button>
+            </a>
+        </div>
+    </div>
+    <div class="ticket">
+        <h5 class="schedule--date">2022.12.19 MON 8PM</h5>
+        <h5 class="schedule--city">BERLIN</h5>
+        <h5 class="schedule--location">MERCEDES-BENZ ARENA</h5>
+        <div class="schedule--actions">
+            <a href="https://www.aegpresents.co.uk/home/blackpink-world-tour-europe" target="_blank">
+                <button type="button" class="button--ghost">MORE INFO</button>
+            </a>
+            <a href="https://www.eventim.de/artist/blackpink/" target="_blank">
+                <button type="button" class="button--pink">TICKET LINK</button>
+            </a>
+        </div>
+    </div>
+    <div class="ticket">
+        <h5 class="schedule--date">2022.12.20 MON 8PM</h5>
+        <h5 class="schedule--city">BERLIN</h5>
+        <h5 class="schedule--location">MERCEDES-BENZ ARENA</h5>
+        <div class="schedule--actions">
+            <a href="https://www.aegpresents.co.uk/home/blackpink-world-tour-europe" target="_blank">
+                <button type="button" class="button--ghost">MORE INFO</button>
+            </a>
+            <a href="https://www.eventim.de/artist/blackpink/" target="_blank">
+                <button type="button" class="button--pink">TICKET LINK</button>
+            </a>
+        </div>
+    </div>
+    <div class="ticket">
+        <h5 class="schedule--date">2022.12.22 THU 8PM</h5>
+        <h5 class="schedule--city">AMSTERDAM</h5>
+        <h5 class="schedule--location">ZIGGO DOME</h5>
+        <div class="schedule--actions">
+            <a href="https://www.aegpresents.co.uk/home/blackpink-world-tour-europe" target="_blank">
+                <button type="button" class="button--ghost">MORE INFO</button>
+            </a>
+            <a href="https://www.ticketmaster.nl/artist/blackpink-tickets/1007833" target="_blank">
+                <button type="button" class="button--pink">TICKET LINK</button>
+            </a>
+        </div>
+    </div>
+    </section>
+    <footer id="bottom-footer">
+        <a href="#" id="footerLogo"><img src="images/logo.png" alt="블랙핑크 로고"></a>
+        <div>
+            <a href="https://weverse.io/blackpink/feed" target="_blank"><img src="images/fanclub-blink.png" alt="팬클럽"></a>
+            <a href="https://www.youtube.com/BLACKPINKOFFICIAL" target="_blank"><img src="images/youtube.png" alt="유튜브"></a>
+            <a href="https://www.facebook.com/BLACKPINKOFFICIAL" target="_blank"><img src="images/facebook.png" alt="페이스북"></a>
+            <a href="https://weibo.com/login.php" target="_blank"><img src="images/weibo.png" alt="웨이보"></a>
+            <a href="https://www.instagram.com/BLACKPINKOFFICIAL/" target="_blank"><img src="images/instagram.png" alt="인스타그램"></a>
+            <a href="https://twitter.com/BLACKPINK" target="_blank"><img src="images/twitter.png" alt="트위터"></a>
+            <a href="https://www.vlive.tv/channel/F001E5" target="_blank"><img src="images/vlive.png" alt="라이브"></a>
+        </div>
+        CONTACT FOR SPONSORSHIP<br>
+        <a href="mailto:concert_sponsor@ygmail.ne" id="email">E-MAIL: concert_sponsor@ygmail.ne</a><br>
+        <span>COPYRIGHT YG ENTERTAINMENT ALL RIGHTS RESERVED.</span>
+    </footer>
+    <section id="popup">
+        <div>
+            <div id="popTitle">
+                <h2>작품제목</h2>
+                <button type="button">&#215;</button>
+            </div>
+            <img src="images/the album_hover.jpg" alt="the album">
+        </div>
+    </section>
+</div>
+</body>
+</html>
